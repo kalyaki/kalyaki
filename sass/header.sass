@@ -1,0 +1,199 @@
+@import "bourbon"
+@import "vars"
+@import "fontello"
+
+body
+  font-size: 16px
+  min-width: 320px
+  // position: relative
+  line-height: 1.6
+  font-family: $main-font-regular
+  color: $main-color
+  overflow-x: hidden
+
+html 
+  box-sizing: border-box
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+.clearfix:after
+  content: ""
+  display: table
+  clear:both
+
+.ulli 
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  transition: $transition
+a:hover
+  text-decoration: none
+  color: $color-hover
+  
+a:active, a:focus
+  text-decoration: none
+  color: inherit
+
+b, strong
+  font-family: $main-font-bold
+  font-weight: normal
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  font-family: $main-font-bold
+
+
+.hidden
+  display: none
+
+// -----------------------------------------------------------------------
+//   [Header]
+// ----------------------------------------------------------------------
+.header
+  &__top
+    background: #7667b6
+    &::after
+      content: " "
+      display: block
+      height: 4px
+      width: 100%
+      background: url(../img/top-border.png) left top repeat-x
+      background: #f6921f;
+      background: -moz-linear-gradient(left,  #f6921f 0%, #f6921f 2%, #f5d689 2%, #f5d689 11%, #e4726e 11%, #e4726e 20%, #739a99 20%, #739a99 29%, #fdd077 29%, #fdd077 38%, #6dd2da 38%, #6dd2da 47%, #ffb89c 47%, #ffb89c 56%, #7ac489 56%, #7ac489 64%, #7b9bbb 64%, #7b9bbb 73%, #b482ec 73%, #b482ec 82%, #d7723d 82%, #d7723d 91%, #f6921f 91%, #f6921f 100%)
+      background: -webkit-linear-gradient(left,  #f6921f 0%,#f6921f 2%,#f5d689 2%,#f5d689 11%,#e4726e 11%,#e4726e 20%,#739a99 20%,#739a99 29%,#fdd077 29%,#fdd077 38%,#6dd2da 38%,#6dd2da 47%,#ffb89c 47%,#ffb89c 56%,#7ac489 56%,#7ac489 64%,#7b9bbb 64%,#7b9bbb 73%,#b482ec 73%,#b482ec 82%,#d7723d 82%,#d7723d 91%,#f6921f 91%,#f6921f 100%)
+      background: linear-gradient(to right,  #f6921f 0%,#f6921f 2%,#f5d689 2%,#f5d689 11%,#e4726e 11%,#e4726e 20%,#739a99 20%,#739a99 29%,#fdd077 29%,#fdd077 38%,#6dd2da 38%,#6dd2da 47%,#ffb89c 47%,#ffb89c 56%,#7ac489 56%,#7ac489 64%,#7b9bbb 64%,#7b9bbb 73%,#b482ec 73%,#b482ec 82%,#d7723d 82%,#d7723d 91%,#f6921f 91%,#f6921f 100%)
+  &__l
+    float: left
+  &__r
+    float: right
+  &__contact
+    float: left
+    border-left: 1px solid rgba(249,249,249,0.1)
+    padding: 0 15px
+    height: 48px
+    line-height: 48px
+  &__adress
+    float: left
+  &__social-net
+    float: left
+    margin-left: 20px
+  &__adress
+    margin: 2px 0
+.head-contact
+  margin: 0
+  font-size: 14px
+  color: #fff
+  .icon-phone
+    color: #f79c20
+  &__icon
+    color: #f79c20
+  &__link
+    color: #fff
+.head-adress
+  display: inline-block
+  height: 44px
+  padding: 0 14px 0 11px
+  font-size: 14px
+  color: #fff
+  // background: #dad8e5
+  line-height: 44px
+  box-shadow: inset 0px 0px 0px 1px #eee
+  &__text
+    font-size: 14px
+    vertical-align: middle
+  &:hover
+    background: #fff
+.icon-location
+  &--head
+    font-size: 28px
+    vertical-align: middle
+    &::before
+      margin: 0
+.social-net
+  &__box
+    @extend .ulli
+  &__item
+    float: left
+    margin-right: 10px
+    line-height: 48px
+  &__link
+    display: inline-block
+    text-decoration: none
+    width: 26px
+    height: 26px
+    text-align: center
+    line-height: 24px
+    color: #7667B6
+    background: #fff
+    border-radius: 50%
+    i
+      font-size: 12px
+
+// =============================
+.header-bottom
+  margin: 10px 0
+.logo
+  float: left
+  &__img
+    width: 300px
+.nav
+  float: right
+  &__box
+    @extend .ulli
+  &__item
+    float: left
+    &:last-child a
+      border-right: 1px solid rgba(236,236,236,0.5)
+  &__link
+    display: inline-block
+    height: 92px
+    line-height: 92px
+    padding: 0 16px
+    font-size: 14px
+    color: #7667b6
+    border-left: 1px solid rgba(236,236,236,0.5)
+    i
+      margin-right: 7px
+
+// -----------------------------------------------------------------------
+//   [Main]
+// ----------------------------------------------------------------------
+
+// ---------------------------------
+//   [Slider]
+// ---------------------------------
+.main
+  // padding-bottom: 60px
+
+.flex-direction-nav .flex-prev,
+.flex-direction-nav a
+  height: 50px
+
+.front-info
+  margin-bottom: 70px
+  &__img
+    width: 100%
+    border-radius: 10px
+.title-h1
+  margin-top: 0
+  line-height: 1.2
+  font-size: 32px
+  color: #f79c20
+
+.footer
+  padding: 10px
+  background: #333
+  color: #fefefe
+  font-size: 12px
+  text-align: center
+  p
+    margin: 0
+
+.main-map
+  // border-top: 1px solid #333333
+  // border-bottom: 2px solid #FB9620
+.main-map > ymaps
+  width: 100% !important
