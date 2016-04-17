@@ -33,9 +33,10 @@ a:hover
   text-decoration: none
   color: $color-hover
   
-a:active, a:focus
+a:focus
   text-decoration: none
   color: inherit
+  outline: none
 
 b, strong
   font-family: $main-font-bold
@@ -103,13 +104,12 @@ h1, h2, h3, h4, h5, h6
   box-shadow: inset 0px 0px 0px 1px #eee
   &__text
     font-size: 14px
-    vertical-align: middle
+    vertical-align: top
   &:hover
     background: #fff
 .icon-location
   &--head
     font-size: 28px
-    vertical-align: middle
     &::before
       margin: 0
 .social-net
@@ -176,12 +176,13 @@ h1, h2, h3, h4, h5, h6
   margin-bottom: 70px
   &__img
     width: 100%
-    border-radius: 10px
+    border-radius: 3px
 .title-h1
   margin-top: 0
   line-height: 1.2
   font-size: 32px
   color: #f79c20
+  text-align: center
 
 .footer
   padding: 10px
