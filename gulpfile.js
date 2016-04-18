@@ -45,7 +45,8 @@ gulp.task('scripts', function() {
 gulp.task('deploy', function() {
   return gulp.src('app/**/*')
     .pipe(deploy({
-      repository: 'https://github.com/kalyaki/kalyaki.github.io.git'
+      repository: 'https://kalyaki@github.com/kalyaki/kalyaki.github.io.git',
+      branches: ['master']
     }));
 });
 
