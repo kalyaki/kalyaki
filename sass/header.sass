@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6
 // ----------------------------------------------------------------------
 .header
   &__top
-    background: #7667b6
+    background: rgba(118, 103, 182, 0.84);
     &::after
       content: " "
       display: block
@@ -88,11 +88,14 @@ h1, h2, h3, h4, h5, h6
   font-size: 14px
   color: #fff
   .icon-phone
-    color: #f79c20
+    color: rgba(253,208,119,1)
   &__icon
-    color: #f79c20
+    color: rgba(253,208,119,1)
   &__link
     color: #fff
+    &:hover
+      color: #fff
+
 .head-adress
   display: inline-block
   height: 44px
@@ -126,7 +129,7 @@ h1, h2, h3, h4, h5, h6
     height: 26px
     text-align: center
     line-height: 24px
-    color: #7667B6
+    color: rgba(118,103,182,.84)
     background: #fff
     border-radius: 50%
     i
@@ -209,10 +212,15 @@ h1, h2, h3, h4, h5, h6
 
 .top-panel
   margin-bottom: 50px
-  background: #F8AC25
+  background: url(../img/11.jpg) no-repeat;
+  background-size: cover
   text-align: center
+  padding: 37px 0
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   &__title
   color: #fff
+
 
 .program-card
   margin-bottom: 35px
